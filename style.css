@@ -38,8 +38,27 @@ body {
   display: flex;
   justify-content: center;
   gap: 5px;
+  padding-top: 10px;
 }
 .date h2 {
   font-weight: 500;
   font-size: 1rem;
+}
+
+@media (min-width: 200px) and (max-width: 540px) {
+  .clock .wraper {
+    width: 280px;
+  }
+  h3.day {
+    font-size: 0.9rem;
+  }
+  .time h1 {
+    font-size: 1.5rem;
+  }
+  .date h2 {
+    font-size: 0.8rem;
+  }
+  h3.am-pm {
+    font-size: 0.9rem;
+  }
 }
