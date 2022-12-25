@@ -39,7 +39,7 @@ setInterval(() => {
   sec.innerHTML = seconds < 10 ? "0" + seconds : seconds;
   min.innerHTML = minutes < 10 ? "0" + minutes : minutes;
   hour.innerHTML = hours < 10 ? "0" + hours : hours - 12;
-  am_pm.innerHTML = hours - 12 ? "AM" : "PM";
+  am_pm.innerHTML = hours > 11 ? "PM" : "AM";
   day.innerHTML = dayName(now.getDay());
 
   date.innerHTML = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
