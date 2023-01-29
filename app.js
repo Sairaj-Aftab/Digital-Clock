@@ -44,6 +44,6 @@ setInterval(() => {
 
   date.innerHTML = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
   month.innerHTML =
-    now.getMonth() + 1 < 10 ? "0" + now.getMonth() + 1 : now.getMonth() + 1;
+    now.getMonth() + 1;
   year.innerHTML = now.getFullYear();
 }, 1000);
